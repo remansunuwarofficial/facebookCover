@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reman</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap');
+        html{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-family: 'Cabin Condensed', sans-serif;
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            width: 60vh;
+            background-color: black;
+        }
+
+        .logo img{
+            width: 300px;
+            border-radius: 100%;
+        }
+
+        .name{
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+
+        .address{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+
+        }
+        i{
+            cursor: pointer;
+			font-size: 30px;
+        }
+
+        .icons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon{
+            margin: 0 20px;
+        }
+
+        .fa-github{
+            color: white;
+        }
+        .fa-facebook{
+            color: blue;
+        }
+        .fa-youtube{
+            color: red;
+        }
+
+        .fa-instagram{
+            color: #DD2A7B;
+        }
+
+
+        @media only screen and (max-width: 500px){
+            .logo img{
+                width: 100%;
+            }
+            .container{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 255px){
+           .icons{
+               flex-direction: column;
+           }
+           .icon{
+               margin: 10px 0;
+           }
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<body>
+
+
+    <div class="container">
+        <div class="logo">
+            <img src="reman.jpg" alt="logo">
+            <h1 class="name">Reman Sunuwar</h1>
+            <h3 class="address">Lalitpur, Nepal</h3>
+            <div class="social">
+                <div class="icons">
+                    <div class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const github = document.querySelector(".fa-github");
+        const instagram = document.querySelector(".fa-instagram");
+        const youtube = document.querySelector(".fa-youtube");
+        const facebook = document.querySelector(".fa-facebook");
+
+        github.addEventListener("click", () => {
+            window.open("https://www.github.com/remansunuwarofficial");
+        });
+
+        instagram.addEventListener("click", () => {
+            window.open("https://www.instagram.com/remansunuwarofficial");
+
+        });
+
+        youtube.addEventListener("click", () => {
+            window.open("https://www.youtube.com/results?search_query=remansunuwarofficial");
+        });
+
+        facebook.addEventListener("click", () => {
+            window.open("https://www.facebook.com/remansunuwarofficial");
+        });
+    </script>
+</body>
+</html>
